@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./public/css/style.css" />
     <script
       src="https://kit.fontawesome.com/cd2166ebf7.js"
       crossorigin="anonymous"
@@ -24,27 +24,42 @@
       <img class = "header__img" src="images/logo/ohmyfood.png" alt="logo" class="header_logo" />
     </header>
 
-    <section class="placeRestaurant">
-      <div class="location">
-        <i class="fas fa-map-marker-alt"></i>
-        <p>Paris, Belleville</p>
+    <div class="maps">
+      <span>
+          <i class="fas fa-map-marker-alt"></i>
+      </span>
+          <span class="maps__search">
+          <input type="search" name="city" value="Paris,Belleville" placeholder="Votre ville">
+      </span>
       </div>
-    </section>
 
+    
     <section class="Concept">
-      <h1>Réservez le menu qui vous convient</h1>
+      <h2>Réservez le menu qui vous convient</h2>
       <p>Découvrez des restaurants d'exeption, séléctionnés par nos soins</p>
-      <button class="btn btn--gradient">Explorez nos restaurants</button>
+      <button class="btn__Explore">Explorez nos restaurants</button>
     </section>
 
     <section class="Fonctionnement">
-      <h1>Fonctionnement</h1>
+      <h2>Fonctionnement</h2>
       <div class="menu">
         <nav>
-          <ul>
-            <li>Choisissez un restaurant</li>
-            <li>Composez votre menu</li>
-            <li>Dégustez au restaurant</li>
+          <ul class="operation__list">
+            <li>
+              <div class="operation__list--number">1</div>
+              <div><i class="fas fa-mobile-alt operation__list--icon"></i></div>
+              <p>Choisissez un restaurant</p>
+            </li>
+            <li>
+              <div class="operation__list--number">2</div>
+              <div><i class="fas fa-list-ul operation__list--icon"></i></div>
+              <p>Composez votre menu</p>
+            </li>
+            <li>
+              <div class="operation__list--number">3</div>
+              <div><i class="fas fa-store operation__list--icon"></i></div>
+              <p>Dégustez au restaurant</p>
+            </li>
           </ul>
         </nav>
       </div>
@@ -52,8 +67,8 @@
 
     <section class="Restaurants">
       <div class="tableauRestaurants">
-        <h1>Restaurants</h1>
-        <a href="#">
+        <h2>Restaurants</h2>
+        <a href="./pages/lapalette-du-gout.html">
           <article class="menuRestaurant">
             <img
               src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
@@ -113,9 +128,9 @@
       <img class = "header__img" src="images/logo/ohmyfood.png" alt="logo" class="header_logo" />
       <nav>
         <ul>
-          <li>Proposer un restaurant</li>
-          <li>Devenir partenaire</li>
-          <li>Mentions légales</li>
+          <li><a href="#"><i class="fas fa-utensils"></i> Proposer un restaurant</a></li>
+          <li><a href="#"><i class="fas fa-hands-helping"></i> Devenir partenaire</a></li>
+          <li><a href="#">Mentions légales</a></li>
           <li>Contact</li>
         </ul>
       </nav>
