@@ -21,6 +21,7 @@ ul {
   list-style: none;
 }
 
+
 @media screen and (max-width: 700px) {
   .header__title {
     align-items: center;
@@ -78,20 +79,28 @@ ul {
       box-shadow: 1px 2px 8px 2px #c4c4c4;
       background-color: #f5f5f5;
       width: 70%;
+      &:hover {
+        background-color: #f2eafb;
+      }
       p {
         font-weight: 500;
         margin-left: 20px;
+      
       }
     }
   }
 
-  .operation__list li:hover .fas {
-    color: #9356dc;
-  }
+
+
+
   .operation__list--icon {
     color: grey;
     font-size: 1.2rem;
     margin-left: 20px;
+  &:hover {
+    color: #9356dc;
+  }  
+
   }
   .operation__list--number {
     background-color: #9356dc;
@@ -198,11 +207,10 @@ ul {
 
   footer {
     flex-direction: column;
-    padding: 50px 40px;
-    padding-bottom: 10px;
+    padding: 25px;
     margin-bottom: 1%;
-    background-color: #4d4750;
-    color: azure;
+    background-color: #353535;
+    color:white;
     ul li {
         padding: 5px 0 5px 0;
       }
@@ -211,7 +219,10 @@ ul {
 
 
   .fa-utensils {
-    padding-right: 5px;
+    margin-right: 12px;
+  }
+  .fa-hands-helping {
+    margin-right: 5px;
   }
 
   /*page palette du gout*/
