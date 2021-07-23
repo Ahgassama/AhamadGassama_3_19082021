@@ -25,24 +25,6 @@ ul {
 }
 
 @media screen and (max-width: 700px) {
-  .header__title {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .header__img {
-    padding: 20px 0px 20px 0px;
-    width: 150px;
-  }
-
-  .location {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
   .btn__Explore {
     background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
     border: 1px solid transparent;
@@ -55,7 +37,28 @@ ul {
     width: 65%;
     height: 20%;
   }
+}
+@media screen and (max-width: 700px) {
+  footer {
+    flex-direction: column;
+    padding: 25px;
+    margin-bottom: 1%;
+    background-color: #353535;
+    color: white;
+  }
+  footer ul li {
+    padding: 5px 0 5px 0;
+  }
 
+  .fa-utensils {
+    margin-right: 12px;
+  }
+
+  .fa-hands-helping {
+    margin-right: 5px;
+  }
+}
+@media screen and (max-width: 700px) {
   .operation__list {
     flex-wrap: wrap;
     display: flex;
@@ -99,6 +102,25 @@ ul {
     border-radius: 50%;
     padding: 5px 9px;
     margin-left: -40px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .header__title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header__img {
+    padding: 20px 0px 20px 0px;
+    width: 150px;
+  }
+
+  .location {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .maps {
@@ -196,25 +218,6 @@ ul {
   h3,
 p {
     text-decoration: none;
-  }
-
-  footer {
-    flex-direction: column;
-    padding: 25px;
-    margin-bottom: 1%;
-    background-color: #353535;
-    color: white;
-  }
-  footer ul li {
-    padding: 5px 0 5px 0;
-  }
-
-  .fa-utensils {
-    margin-right: 12px;
-  }
-
-  .fa-hands-helping {
-    margin-right: 5px;
   }
 
   /*page palette du gout*/
