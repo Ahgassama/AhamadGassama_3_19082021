@@ -43,18 +43,21 @@ p {
 
 @media screen and (max-width: 700px) {
   footer {
-    flex-direction: column;
-    padding: 25px;
-    margin-bottom: 1%;
+    padding: 15px;
     background-color: #353535;
     color: white;
   }
-  footer ul li {
+  footer h1 {
+    font-size: 17px;
+    padding: 5px 0 10px 0;
+  }
+  footer h1 ul li {
     padding: 5px 0 5px 0;
   }
 
   .fa-utensils {
-    margin-right: 12px;
+    margin-right: 8px;
+    font-size: 13px;
   }
 
   .fa-hands-helping {
