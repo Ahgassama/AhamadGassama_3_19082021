@@ -8,9 +8,16 @@ body {
     text-decoration: none;
     color: inherit;
   }
+
+  h1 {
+    font-family: Shrikhand, Roboto, sans-serif;
+    margin-left: 20px;
+    font-weight: 900;
+  }
+
   h2 {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 900;
     margin: 40px 30px 0px 30px;
   }
   
@@ -20,3 +27,15 @@ body {
   ul {
     list-style: none;
   }
+
+  h3 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  h3,
+  p {
+    text-decoration: none;
+  }
+ 

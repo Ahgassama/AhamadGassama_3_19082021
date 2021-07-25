@@ -10,6 +10,12 @@ a {
   color: inherit;
 }
 
+h1 {
+  font-family: Shrikhand, Roboto, sans-serif;
+  margin-left: 20px;
+  font-weight: 900;
+}
+
 h2 {
   font-size: 20px;
   font-weight: 500;
@@ -24,20 +30,17 @@ ul {
   list-style: none;
 }
 
-@media screen and (max-width: 700px) {
-  .btn__Explore {
-    background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-    border: 1px solid transparent;
-    border-radius: 30px;
-    padding: 10px 5px;
-    color: #fff;
-    font-weight: bold;
-    box-shadow: 4px 4px 6px #aaa;
-    cursor: pointer;
-    width: 65%;
-    height: 20%;
-  }
+h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 0.9rem;
 }
+
+h3,
+p {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 700px) {
   footer {
     flex-direction: column;
@@ -56,6 +59,50 @@ ul {
 
   .fa-hands-helping {
     margin-right: 5px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .header__title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header__img {
+    padding: 20px 0px 20px 0px;
+    width: 150px;
+  }
+
+  /*page palette du gout*/
+  .conteneurMenu {
+    display: flex;
+    flex-direction: column;
+    border: 5px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 7px #c1c1c1;
+    background-color: #f2f2f2;
+  }
+
+  .banniere__img {
+    width: 100%;
+    min-height: 100px;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 700px) {
+  .btn__Explore {
+    background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    border: 1px solid transparent;
+    border-radius: 30px;
+    padding: 10px 5px;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 4px 4px 6px #aaa;
+    cursor: pointer;
+    width: 65%;
+    height: 20%;
   }
 }
 @media screen and (max-width: 700px) {
@@ -87,6 +134,7 @@ ul {
     margin-left: 20px;
   }
 
+
   .operation__list--icon {
     color: grey;
     font-size: 1.2rem;
@@ -102,19 +150,6 @@ ul {
     border-radius: 50%;
     padding: 5px 9px;
     margin-left: -40px;
-  }
-}
-@media screen and (max-width: 700px) {
-  .header__title {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .header__img {
-    padding: 20px 0px 20px 0px;
-    width: 150px;
   }
 
   .location {
@@ -140,7 +175,8 @@ ul {
     text-align: center;
     width: 150px;
   }
-
+}
+@media screen and (max-width: 700px) {
   .Concept {
     background: #f6f6f6;
     text-align: center;
@@ -197,50 +233,34 @@ ul {
 
   .menuDescription {
     height: 30%;
-  }
-
-  .menuDescription h3 + p {
-    margin-top: 8px;
-    margin-bottom: 0;
-  }
-
-  h1 {
-    margin-left: 10px;
-    font-weight: 900;
-  }
-
-  h3 {
-    margin: 0;
-    font-weight: 700;
-    font-size: 0.9rem;
-  }
-
-  h3,
-p {
-    text-decoration: none;
-  }
-
-  /*page palette du gout*/
-  .conteneurMenu {
+    flex-wrap: wrap;
     display: flex;
-    flex-direction: column;
-    border: 5px solid #fff;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 0 7px #c1c1c1;
-    background-color: #f2f2f2;
+    justify-content: space-between;
+    
   }
 
-  .banniere__img {
-    width: 100%;
-    min-height: 100px;
-    object-fit: cover;
+  .nomMenu{
+    padding: 10px;
+  }
+   
+  .menuDescription h3
+  {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+
+  .heart {  
+  padding-top: 20px;  
+  cursor: pointer;
+  margin-right: 10px;
+  width: 30px;
+  }
+
+  .arrow {
+    margin-left: 20px;
   }
 }
-.arrow {
-  margin-left: 20px;
-}
-
 .meals {
   display: flex;
   flex-wrap: wrap;
@@ -251,7 +271,6 @@ p {
   box-shadow: 4px 4px 6px #aaa;
   position: relative;
   cursor: pointer;
-  white-space: nowrap;
   overflow: hidden;
   flex-direction: column;
   justify-content: space-between;
@@ -274,8 +293,10 @@ p {
   margin: 0;
 }
 
-.starter h3, .dish h3, .dessert h3 {
-  padding-left: 10px;
+.starter h3,
+.dish h3,
+.dessert h3 {
+  padding-left: 20px;
   text-transform: uppercase;
   margin-bottom: 5px;
 }
@@ -284,17 +305,6 @@ p {
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
-}
-
-.cross {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
-  width: 50px;
-  height: 63px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,51 +1,10 @@
 @import "./base/general";
+@import "./layouts/footer", "./layouts/header";
 @import "./components/buttons";
-@import "./layouts/footer";
+@import "./utils/variables","./utils/mixin";
 @import "./pages/homepage";
 
-
 @media screen and (max-width: 700px) {
-  .header__title {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-
-  .header__img {
-    padding: 20px 0px 20px 0px;
-    width: 150px;
-  }
-
-  .location {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  
-
-
-
-  .maps {
-    background: #eaeaea;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: inset 0px 5px 5px 0px #dddddd;
-  }
-
-  .maps__search input {
-    border: none;
-    background: #eaeaea;
-    font-size: 1rem;
-    padding: 20px 5px 20px 5px;
-    margin-top: 5px;
-    text-align: center;
-    width: 150px;
-  }
-
   .Concept {
     background: #f6f6f6;
     text-align: center;
@@ -93,10 +52,10 @@
     background-color: #fff;
     margin: 30px;
     img {
-        width: 100%;
-        height: 150px;
-        object-fit: cover;
-      }
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
   }
 
   .menuDescription {
@@ -107,47 +66,15 @@
     margin-top: 8px;
     margin-bottom: 0;
   }
+   
 
-  h1 {
-    margin-left: 10px;
-    font-weight: 900;
-  }
-  h3 {
-    margin: 0;
-    font-weight: 700;
-    font-size: 0.9rem;
-  }
 
-  h3,
-  p {
-    text-decoration: none;
+  .arrow {
+    margin-left: 20px;
   }
 
   
-
-  /*page palette du gout*/
-  .conteneurMenu {
-    display: flex;
-    flex-direction: column;
-    border: 5px solid #fff;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 0 7px #c1c1c1;
-    background-color: #f2f2f2;
-  }
-
-  .banniere__img {
-    width: 100%;
-    min-height: 100px;
-    object-fit: cover;
-  }
 }
-
-.arrow {
-  margin-left: 20px;
-}
-
-
 
 .meals {
   display: flex;
@@ -159,7 +86,6 @@
   box-shadow: 4px 4px 6px #aaa;
   position: relative;
   cursor: pointer;
-  white-space: nowrap;
   overflow: hidden;
   flex-direction: column;
   justify-content: space-between;
@@ -173,35 +99,24 @@
   line-height: 1.5em;
 }
 
-
-
 .last__line span {
-margin-right: 5px;
+  margin-right: 5px;
 }
-
 
 .meals h4 {
-margin: 0;
+  margin: 0;
 }
 
-.starter h3, .dish h3, .dessert h3 {
-padding-left: 10px;
-text-transform: uppercase;
-margin-bottom: 5px;
+.starter h3,
+.dish h3,
+.dessert h3 {
+  padding-left: 20px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
 }
 
 .last__line p {
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
-}
-.cross {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #99E2D0;
-  width: 50px;
-  height: 63px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
 }
