@@ -1,14 +1,15 @@
 @media screen and (max-width: 700px){
 footer {
-    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: #353535;
     color:white;
+    text-align:justify;
+
     h1{ font-size: 17px;
-        padding: 5px 0 10px 0;
-       ul li{
-        padding: 5px 0 5px 0;
-       }
-   
+        padding: 10px;
+
     }
   }
 
