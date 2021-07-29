@@ -24,6 +24,11 @@
         justify-content: center;
         text-align: center;
         margin-bottom: 50px;
+        @include desktop {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+        }
       }
 
       .fonctionnement h2 {

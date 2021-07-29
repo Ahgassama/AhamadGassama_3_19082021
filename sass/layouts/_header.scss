@@ -1,4 +1,4 @@
-@media screen and (max-width: 700px){
+
 .header__Title {
     align-items: center;
     display: flex;
@@ -28,6 +28,9 @@
   width: 100%;
   min-height: 100px;
   object-fit: cover;
+  @include desktop {
+    max-height: 400px;
+  }
 }
 
 .menu__Title{
@@ -42,4 +45,3 @@
 
 
 
-}
