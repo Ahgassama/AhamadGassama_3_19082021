@@ -1,12 +1,12 @@
 @media screen and (max-width: 700px){
-.header__title {
+.header__Title {
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
 
-  .header__img {
+  .header__Img {
     padding: 20px 0px 20px 0px;
     width: 150px;
   }
@@ -24,13 +24,13 @@
 
 }
 
-.banniere__img {
+.banniere__Img {
   width: 100%;
   min-height: 100px;
   object-fit: cover;
 }
 
-.menu__title{
+.menu__Title{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
