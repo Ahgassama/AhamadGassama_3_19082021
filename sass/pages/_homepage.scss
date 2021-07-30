@@ -1,5 +1,5 @@
 
-    @media screen and (max-width: 700px) {
+    
 
       .location {
         display: flex;
@@ -37,6 +37,7 @@
     
      
   .operation__List {
+   
     flex-wrap: wrap;
     display: flex;
     flex-direction: column;
@@ -62,6 +63,7 @@
         margin-left: 35px;
       
       }
+     
     }
     
   }
@@ -86,6 +88,7 @@
 
   .menu {
     justify-content: center;
+   
   }
   .tableauRestaurants {
     display: flex;
@@ -93,6 +96,9 @@
     background-color: #f2f2f2;
     width: 100%;
     padding: auto;
+    @include desktop {
+      flex-direction: row;
+    }
   }
 
   .menuRestaurant {
@@ -153,4 +159,3 @@
   }
 
 
-}
