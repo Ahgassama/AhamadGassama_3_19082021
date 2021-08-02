@@ -18,7 +18,7 @@ h1 {
 
 h2 {
   font-size: 20px;
-  font-weight: 900;
+  font-weight: bold;
   margin: 40px 30px 0px 30px;
 }
 
@@ -105,7 +105,7 @@ li {
   min-height: 100px;
   object-fit: cover;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1025px) {
   .banniere__Img {
     max-height: 400px;
   }
@@ -139,7 +139,7 @@ li {
   width: 65%;
   height: 20%;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1025px) {
   .btn__Explore {
     width: 20%;
   }
@@ -187,17 +187,6 @@ li {
   text-align: center;
   margin-bottom: 50px;
 }
-@media screen and (min-width: 1280px) {
-  .fonctionnement {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
-
-.fonctionnement h2 {
-  margin-left: 30px;
-}
 
 .operation__List {
   flex-wrap: wrap;
@@ -205,6 +194,12 @@ li {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media screen and (min-width: 1025px) {
+  .operation__List {
+    display: flex;
+    flex-direction: row;
+  }
 }
 .operation__List li {
   display: flex;
@@ -218,6 +213,13 @@ li {
   box-shadow: 1px 2px 8px 2px #c4c4c4;
   background-color: #f5f5f5;
   width: 70%;
+}
+@media screen and (min-width: 1025px) {
+  .operation__List li {
+    flex-wrap: wrap;
+    margin: 50px 50px;
+    width: 20%;
+  }
 }
 .operation__List li:hover {
   background-color: #f2eafb;
@@ -248,6 +250,19 @@ li {
   justify-content: center;
 }
 
+.restaurants {
+  background-color: #f2f2f2;
+}
+
+h2 {
+  padding-top: 20px;
+}
+@media screen and (min-width: 1025px) {
+  h2 {
+    text-align: center;
+  }
+}
+
 .tableauRestaurants {
   display: flex;
   flex-direction: column;
@@ -255,9 +270,12 @@ li {
   width: 100%;
   padding: auto;
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1025px) {
   .tableauRestaurants {
-    flex-direction: row;
+    display: grid;
+    grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+    gap: 25px;
+    margin: 10px;
   }
 }
 
@@ -271,6 +289,13 @@ li {
   box-shadow: 0 0 7px #c1c1c1;
   background-color: #fff;
   margin: 30px;
+}
+@media screen and (min-width: 1025px) {
+  .menuRestaurant {
+    width: 80%;
+    justify-content: center;
+    margin: 40px;
+  }
 }
 .menuRestaurant img {
   width: 100%;

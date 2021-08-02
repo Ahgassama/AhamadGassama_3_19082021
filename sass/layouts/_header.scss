@@ -1,19 +1,18 @@
-
 .header__Title {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .header__Img {
-    padding: 20px 0px 20px 0px;
-    width: 150px;
-  }
-  /*page palette du gout*/
- .conteneurMenu {
+  align-items: center;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header__Img {
+  padding: 20px 0px 20px 0px;
+  width: 150px;
+}
+/*page palette du gout*/
+.conteneurMenu {
+  display: flex;
+  flex-direction: column;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
   box-shadow: 0 0 7px #c1c1c1;
@@ -21,7 +20,6 @@
   overflow: hidden;
   position: relative;
   margin-top: -50px;
-
 }
 
 .banniere__Img {
@@ -33,15 +31,12 @@
   }
 }
 
-.menu__Title{
+.menu__Title {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  .heart{
+  .heart {
     margin-top: 25px;
     font-size: 25px;
   }
 }
-
-
-

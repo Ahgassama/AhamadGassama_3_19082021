@@ -1,47 +1,44 @@
-
 .btn__Explore {
-    background-image: linear-gradient(
-      to left,
-      #9356dc,
-      #b35cdc,
-      #cf64dc,
-      #e86edb,
-      #ff79da
-    );
-    border: 1px solid transparent;
-    border-radius: 30px;
-    padding: 10px 5px;
-    color: #fff;
-    font-weight: bold;
-    box-shadow: 4px 4px 6px #aaa;
-    cursor: pointer;
-    width: 65%;
-    height: 20%;
-    @include desktop{
-      width : 20%
-    }
-  }
-.btn__Order{
   background-image: linear-gradient(
-      to left,
-      #9356dc,
-      #b35cdc,
-      #cf64dc,
-      #e86edb,
-      #ff79da
-    );
-    border: 1px solid transparent;
-    border-radius: 30px;
-    margin-left: 110px;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    align-self: center;
-    color: #fff;
-    font-weight: bold;
-    box-shadow: 4px 4px 6px #aaa;
-    cursor: pointer;
-    width: 50%;
-    height: 50px;
-} 
-
- 
+    to left,
+    #9356dc,
+    #b35cdc,
+    #cf64dc,
+    #e86edb,
+    #ff79da
+  );
+  border: 1px solid transparent;
+  border-radius: 30px;
+  padding: 10px 5px;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 4px 4px 6px #aaa;
+  cursor: pointer;
+  width: 65%;
+  height: 20%;
+  @include desktop {
+    width: 20%;
+  }
+}
+.btn__Order {
+  background-image: linear-gradient(
+    to left,
+    #9356dc,
+    #b35cdc,
+    #cf64dc,
+    #e86edb,
+    #ff79da
+  );
+  border: 1px solid transparent;
+  border-radius: 30px;
+  margin-left: 110px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  align-self: center;
+  color: #fff;
+  font-weight: bold;
+  box-shadow: 4px 4px 6px #aaa;
+  cursor: pointer;
+  width: 50%;
+  height: 50px;
+}
