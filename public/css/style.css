@@ -293,10 +293,7 @@ h2 {
   .tableauRestaurants {
     display: grid;
     grid-template: repeat(2, 1fr)/repeat(2, 1fr);
-    justify-content: center;
-    padding: 20px;
-    gap: 10px;
-    margin: 10px;
+    padding-left: 50px;
   }
 }
 
@@ -313,8 +310,6 @@ h2 {
 }
 @media screen and (min-width: 1025px) {
   .menuRestaurant {
-    justify-content: center;
-    margin-left: 40px;
     width: 70%;
   }
 }
@@ -364,6 +359,50 @@ h2 {
   width: 150px;
 }
 
+.conteneurMenu {
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow: 0 0 7px #c1c1c1;
+  background-color: #f2f2f2;
+  overflow: hidden;
+  position: relative;
+  margin-top: -50px;
+}
+@media screen and (min-width: 1025px) {
+  .conteneurMenu {
+    margin-right: 100px;
+    margin-left: 100px;
+  }
+}
+
+.banniere__Img {
+  width: 100%;
+  min-height: 100px;
+  object-fit: cover;
+}
+@media screen and (min-width: 1025px) {
+  .banniere__Img {
+    max-height: 400px;
+  }
+}
+
+.menu__Title {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1025px) {
+  .menu__Title {
+    justify-content: space-between;
+  }
+}
+.menu__Title .heart {
+  margin-top: 25px;
+  font-size: 25px;
+}
+
 .heart {
   font-size: 25px;
   width: 20px;
@@ -382,7 +421,7 @@ h2 {
   border-radius: 15px;
   margin: 20px 10px;
   padding: 10px;
-  box-shadow: 4px 4px 4px #aaa;
+  box-shadow: 2px 2px 2px #aaa;
   position: relative;
   cursor: pointer;
   overflow: hidden;
@@ -421,10 +460,12 @@ h2 {
   overflow: hidden;
 }
 
-.dessert {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+@media screen and (min-width: 1025px) {
+  .dish__Card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
