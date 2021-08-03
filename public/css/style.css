@@ -51,10 +51,20 @@ footer {
   color: white;
   text-align: justify;
 }
+@media screen and (min-width: 1025px) {
+  footer {
+    text-align: center;
+  }
+}
 footer h1 {
   font-size: 17px;
   font-weight: normal;
   margin: 8px;
+}
+@media screen and (min-width: 1025px) {
+  footer h1 {
+    font-size: 20px;
+  }
 }
 
 ul {
@@ -123,7 +133,7 @@ li {
 
 .line {
   width: 40px;
-  border: 2px solid #99E2D0;
+  border: 2px solid #99e2d0;
   margin-left: 10px;
 }
 
@@ -149,16 +159,19 @@ li {
   background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   border: 1px solid transparent;
   border-radius: 30px;
-  margin-left: 110px;
-  margin-top: 30px;
-  margin-bottom: 40px;
-  align-self: center;
+  margin: 40px 110px;
   color: #fff;
   font-weight: bold;
   box-shadow: 4px 4px 6px #aaa;
   cursor: pointer;
   width: 50%;
   height: 50px;
+}
+@media screen and (min-width: 1025px) {
+  .btn__Order {
+    width: 20%;
+    align-self: center;
+  }
 }
 
 .location {
@@ -274,7 +287,9 @@ h2 {
   .tableauRestaurants {
     display: grid;
     grid-template: repeat(2, 1fr)/repeat(2, 1fr);
-    gap: 25px;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
     margin: 10px;
   }
 }
@@ -292,9 +307,9 @@ h2 {
 }
 @media screen and (min-width: 1025px) {
   .menuRestaurant {
-    width: 80%;
     justify-content: center;
-    margin: 40px;
+    margin-left: 40px;
+    width: 70%;
   }
 }
 .menuRestaurant img {
@@ -398,6 +413,12 @@ h2 {
   margin: 0;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.dessert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

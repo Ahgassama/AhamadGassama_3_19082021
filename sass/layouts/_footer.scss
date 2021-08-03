@@ -3,11 +3,17 @@ footer {
   background-color: #353535;
   color: white;
   text-align: justify;
+  @include desktop {
+    text-align: center;
+  }
 
   h1 {
     font-size: 17px;
     font-weight: normal;
     margin: 8px;
+    @include desktop {
+      font-size: 20px;
+    }
   }
 }
 

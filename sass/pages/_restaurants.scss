@@ -52,3 +52,9 @@
   white-space: nowrap;
   overflow: hidden;
 }
+
+.dessert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
