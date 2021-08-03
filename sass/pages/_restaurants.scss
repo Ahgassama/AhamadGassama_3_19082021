@@ -9,8 +9,8 @@
   position: relative;
   margin-top: -50px;
   @include desktop {
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 80px;
+    margin-left: 80px;
   }
 }
 
@@ -60,6 +60,10 @@
   justify-content: space-between;
   font-size: 0.9rem;
   text-align: left;
+  @include desktop {
+    padding: 15px;
+    width: 100%;
+  }
 }
 .last__line {
   display: flex;
@@ -94,6 +98,6 @@
   @include desktop {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
   }
 }

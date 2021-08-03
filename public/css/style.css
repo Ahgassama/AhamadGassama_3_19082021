@@ -372,8 +372,8 @@ h2 {
 }
 @media screen and (min-width: 1025px) {
   .conteneurMenu {
-    margin-right: 100px;
-    margin-left: 100px;
+    margin-right: 80px;
+    margin-left: 80px;
   }
 }
 
@@ -430,6 +430,12 @@ h2 {
   font-size: 0.9rem;
   text-align: left;
 }
+@media screen and (min-width: 1025px) {
+  .meals {
+    padding: 15px;
+    width: 100%;
+  }
+}
 
 .last__line {
   display: flex;
@@ -464,7 +470,7 @@ h2 {
   .dish__Card {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
   }
 }
 
