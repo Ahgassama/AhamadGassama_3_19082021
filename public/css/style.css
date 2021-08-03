@@ -109,6 +109,12 @@ li {
   position: relative;
   margin-top: -50px;
 }
+@media screen and (min-width: 1025px) {
+  .conteneurMenu {
+    margin-left: 70px;
+    margin-right: 70px;
+  }
+}
 
 .banniere__Img {
   width: 100%;
