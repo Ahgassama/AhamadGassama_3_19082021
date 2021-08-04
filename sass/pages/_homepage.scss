@@ -8,13 +8,14 @@
   background: #f6f6f6;
   text-align: center;
   justify-content: center;
-  padding: 50px;
+  padding: 30px;
   height: 200px;
 }
 
 .concept p {
   color: #4d4d4d;
   font-size: 20px;
+  padding: 10px;
 }
 
 .fonctionnement {
@@ -111,12 +112,13 @@ h2 {
   display: grid;
   height: 250px;
   box-sizing: border-box;
-  border: 5px solid #fff;
+  border: 5px #fff;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 0 7px #c1c1c1;
   background-color: #fff;
   margin: 30px;
+  position: relative;
   @include desktop {
     width: 70%;
   }
@@ -165,4 +167,22 @@ h2 {
   margin-top: 5px;
   text-align: center;
   width: 150px;
+}
+
+.flag-New {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 80px;
+  background-color: $color-tertiary;
+  color: #008766;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
+p {
+  margin: 5px 10px 5px 10px;
 }
