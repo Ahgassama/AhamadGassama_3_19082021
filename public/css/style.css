@@ -140,7 +140,11 @@ li {
   height: 20%;
 }
 .btn__Explore:hover {
-  background-color: #fface8;
+  opacity: 0.8;
+  transition: opacity 0.5s ease-out;
+  -moz-transition: opacity 0.5s ease-out;
+  -webkit-transition: opacity 0.5s ease-out;
+  -o-transition: opacity 0.5s ease-out;
 }
 @media screen and (min-width: 1025px) {
   .btn__Explore {

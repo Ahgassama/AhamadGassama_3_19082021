@@ -19,7 +19,11 @@
   height: 20%;
 
   &:hover {
-    background-color: lighten($color: #ff79da, $amount: 10);
+    opacity: 0.8;
+    transition: opacity 0.5s ease-out;
+    -moz-transition: opacity 0.5s ease-out;
+    -webkit-transition: opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out;
   }
   @include desktop {
     width: 20%;
