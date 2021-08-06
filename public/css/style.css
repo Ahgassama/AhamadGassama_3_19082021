@@ -98,27 +98,10 @@ li {
 }
 
 /*page palette du gout*/
-.conteneurMenu {
-  display: flex;
-  flex-direction: column;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
-  box-shadow: 0 0 7px #c1c1c1;
-  background-color: #f2f2f2;
-  overflow: hidden;
-  position: relative;
-  margin-top: -50px;
-}
-@media screen and (min-width: 1025px) {
-  .conteneurMenu {
-    margin-left: 70px;
-    margin-right: 70px;
-  }
-}
-
 .banniere__Img {
   width: 100%;
   min-height: 100px;
+  max-height: 280px;
   object-fit: cover;
 }
 @media screen and (min-width: 1025px) {
@@ -146,14 +129,18 @@ li {
 .btn__Explore {
   background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   border: 1px solid transparent;
-  border-radius: 30px;
-  padding: 10px 5px;
+  border-radius: 40px;
+  padding: 8px 5px;
   color: #fff;
   font-weight: bold;
+  font-size: 17px;
   box-shadow: 4px 4px 6px #aaa;
   cursor: pointer;
-  width: 65%;
+  width: 55%;
   height: 20%;
+}
+.btn__Explore:hover {
+  background-color: #fface8;
 }
 @media screen and (min-width: 1025px) {
   .btn__Explore {
@@ -168,7 +155,8 @@ li {
   margin: 40px 110px;
   color: #fff;
   font-weight: bold;
-  box-shadow: 1px 3px 25px -10px;
+  font-size: 16px;
+  box-shadow: 4px 4px 6px #aaa;
   cursor: pointer;
   width: 50%;
   height: 50px;
@@ -191,7 +179,7 @@ li {
   text-align: center;
   justify-content: center;
   padding: 30px;
-  height: 200px;
+  height: 210px;
 }
 
 .concept p {
@@ -246,6 +234,7 @@ li {
 }
 .operation__List li p {
   font-weight: 500;
+  font-size: 16px;
   margin-left: 35px;
 }
 
@@ -294,7 +283,9 @@ h2 {
   .tableauRestaurants {
     display: grid;
     grid-template: repeat(2, 1fr)/repeat(2, 1fr);
-    padding-left: 50px;
+    justify-content: center;
+    column-gap: 5px;
+    padding: 30px;
   }
 }
 
@@ -309,10 +300,11 @@ h2 {
   background-color: #fff;
   margin: 30px;
   position: relative;
+  cursor: pointer;
 }
 @media screen and (min-width: 1025px) {
   .menuRestaurant {
-    width: 70%;
+    width: 80%;
   }
 }
 .menuRestaurant img {
