@@ -107,7 +107,7 @@ h2 {
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
     justify-content: center;
     column-gap: 5px;
-    padding: 30px;
+    row-gap: 25px;
   }
 }
 
@@ -125,6 +125,7 @@ h2 {
   cursor: pointer;
   @include desktop {
     width: 80%;
+    margin: 30px auto;
   }
   img {
     width: 100%;

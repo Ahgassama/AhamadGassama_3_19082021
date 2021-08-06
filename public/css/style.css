@@ -296,7 +296,7 @@ h2 {
     grid-template: repeat(2, 1fr)/repeat(2, 1fr);
     justify-content: center;
     column-gap: 5px;
-    padding: 30px;
+    row-gap: 25px;
   }
 }
 
@@ -316,6 +316,7 @@ h2 {
 @media screen and (min-width: 1025px) {
   .menuRestaurant {
     width: 80%;
+    margin: 30px auto;
   }
 }
 .menuRestaurant img {
