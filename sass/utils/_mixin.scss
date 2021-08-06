@@ -9,3 +9,14 @@
     @content;
   }
 }
+
+@mixin btn-Color {
+  background-image: linear-gradient(
+    to left,
+    #9356dc,
+    #b35cdc,
+    #cf64dc,
+    #e86edb,
+    #ff79da
+  );
+}
