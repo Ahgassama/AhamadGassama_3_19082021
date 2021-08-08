@@ -45,6 +45,14 @@ p {
   font-size: 14px;
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 footer {
   padding: 10px 20px;
   background-color: #353535;
@@ -137,7 +145,7 @@ li {
   box-shadow: 1px 4px 6px #aaa;
   cursor: pointer;
   width: 55%;
-  height: 20%;
+  height: 30%;
 }
 .btn__Explore:hover {
   opacity: 0.8;
@@ -358,15 +366,21 @@ h2 {
   position: absolute;
 }
 .empty-Heart:hover {
-  opacity: 0;
+  border: transparent;
+  opacity: 0.1;
+  transition: opacity 0.1s ease-out;
+  -moz-transition: opacity 0.1s ease-out;
+  -webkit-transition: opacity 0.1s ease-out;
+  -o-transition: opacity 0.1s ease-out;
 }
 
 .full-Heart {
-  color: #e86edb;
   opacity: 0;
 }
 .full-Heart:hover {
-  opacity: 1;
+  opacity: 0.8;
+  transition: opacity 0.2s ease-out;
+  color: #9356dc;
 }
 
 .maps {
@@ -519,6 +533,18 @@ p {
     justify-content: space-around;
     margin: 20px;
   }
+}
+
+.starter {
+  animation: fadein 1s ease-in-out;
+}
+
+.dish {
+  animation: fadein 2s ease-in-out;
+}
+
+.dessert {
+  animation: fadein 3s ease-in-out;
 }
 
 /*# sourceMappingURL=style.css.map */

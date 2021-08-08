@@ -102,3 +102,13 @@
     margin: 20px;
   }
 }
+
+.starter {
+  animation: fadein 1s ease-in-out;
+}
+.dish {
+  animation: fadein 2s ease-in-out;
+}
+.dessert {
+  animation: fadein 3s ease-in-out;
+}

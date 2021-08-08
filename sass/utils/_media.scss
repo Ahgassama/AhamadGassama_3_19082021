@@ -2,3 +2,12 @@ $breakpoints: (
   tablet: 700px,
   desktop: 1025px,
 );
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
