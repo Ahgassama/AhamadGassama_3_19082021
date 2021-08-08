@@ -158,9 +158,19 @@ h2 {
 }
 
 .heart {
+  padding: 0;
   font-size: 25px;
   width: 20px;
   margin: 20px;
+}
+.empty-Heart {
+  position: absolute;
+}
+.full-Heart {
+  color: $linear-gradient;
+  &:hover {
+    opacity: 1;
+  }
 }
 
 .maps {
