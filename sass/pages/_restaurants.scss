@@ -60,6 +60,13 @@
   justify-content: space-between;
   font-size: 0.9rem;
   text-align: left;
+  &:hover .cross {
+    opacity: 1;
+    transform: translate(-50px);
+  }
+  &:hover .fa-check-circle {
+    transform: rotate(360deg);
+  }
   @include desktop {
     padding: 15px;
     width: 100%;
@@ -111,4 +118,10 @@
 }
 .dessert {
   animation: fadein 3s ease-in-out;
+}
+.cross {
+  @include cross;
+}
+.cross--Check {
+  font-size: 1.7rem;
 }

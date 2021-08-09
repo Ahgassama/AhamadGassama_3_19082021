@@ -230,6 +230,11 @@ li {
   animation: rotate 1s linear infinite;
 }
 
+.forke--Knife {
+  font-size: 2rem;
+  color: #dddddd;
+}
+
 .location {
   display: flex;
   justify-content: center;
@@ -534,6 +539,13 @@ p {
   font-size: 0.9rem;
   text-align: left;
 }
+.meals:hover .cross {
+  opacity: 1;
+  transform: translate(-50px);
+}
+.meals:hover .fa-check-circle {
+  transform: rotate(360deg);
+}
 @media screen and (min-width: 1025px) {
   .meals {
     padding: 15px;
@@ -589,6 +601,30 @@ p {
 
 .dessert {
   animation: fadein 3s ease-in-out;
+}
+
+.cross {
+  display: flex;
+  justify-content: center;
+  background-color: #99e2d0;
+  width: 40px;
+  height: 60px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  position: absolute;
+  padding: 20px;
+  right: -50px;
+  top: 0;
+  opacity: 0;
+  transition: transform 300ms ease-in-out;
+}
+.cross .fa-check-circle {
+  color: #fff;
+  transition: transform 400ms ease-in-out;
+}
+
+.cross--Check {
+  font-size: 1.7rem;
 }
 
 /*# sourceMappingURL=style.css.map */
