@@ -15,7 +15,8 @@
   text-align: center;
   position: fixed;
   z-index: 100;
-  animation: loader 1s ease-in-out 3s forwards;
+  pointer-events: none;
+  animation: loader 1s ease-in-out 2s forwards;
 }
 
 .loader__Ustensils {
@@ -26,7 +27,6 @@
   left: 50%;
   animation: rotate 1s linear infinite;
 }
-
 .location {
   display: flex;
   justify-content: center;
