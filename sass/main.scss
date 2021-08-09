@@ -1,5 +1,6 @@
 @import "./base/general";
-@import "./utils/variables", "./utils/media", "./utils/mixin";
+@import "./utils/variables", "./utils/media", "./utils/mixin",
+  "./utils/keyframes";
 @import "./layouts/footer", "./layouts/header", "./layouts/menu";
 @import "./components/buttons";
 @import "./pages/homepage", "./pages/restaurants";
