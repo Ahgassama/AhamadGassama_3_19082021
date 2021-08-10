@@ -60,6 +60,10 @@
   justify-content: space-between;
   font-size: 0.9rem;
   text-align: left;
+  transition: padding-right 300ms ease-in-out;
+  &:hover {
+    padding-right: 80px;
+  }
   &:hover .cross {
     opacity: 1;
     transform: translate(-50px);

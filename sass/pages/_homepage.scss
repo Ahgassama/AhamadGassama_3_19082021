@@ -198,6 +198,7 @@ h2 {
 }
 .empty-Heart {
   position: absolute;
+
   &:hover {
     border: transparent 0px solid;
     opacity: 0.1;
@@ -209,6 +210,9 @@ h2 {
 }
 .full-Heart {
   opacity: 0;
+  &:active {
+    color: $linear-gradient;
+  }
   &:hover {
     border: transparent 0px solid;
     opacity: 0.8;

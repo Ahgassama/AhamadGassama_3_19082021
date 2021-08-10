@@ -425,6 +425,9 @@ h2 {
 .full-Heart {
   opacity: 0;
 }
+.full-Heart:active {
+  color: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+}
 .full-Heart:hover {
   border: transparent 0px solid;
   opacity: 0.8;
@@ -538,6 +541,10 @@ p {
   justify-content: space-between;
   font-size: 0.9rem;
   text-align: left;
+  transition: padding-right 300ms ease-in-out;
+}
+.meals:hover {
+  padding-right: 80px;
 }
 .meals:hover .cross {
   opacity: 1;
