@@ -200,24 +200,19 @@ h2 {
   position: absolute;
 
   &:hover {
-    border: transparent 0px solid;
-    opacity: 0.1;
+    color: transparent;
+    opacity: 0;
     transition: opacity 0.1s ease-out;
-    -moz-transition: opacity 0.1s ease-out;
-    -webkit-transition: opacity 0.1s ease-out;
-    -o-transition: opacity 0.1s ease-out;
   }
 }
 .full-Heart {
   opacity: 0;
-  &:active {
-    color: $linear-gradient;
-  }
+  color: #9356dc;
+
   &:hover {
-    border: transparent 0px solid;
+    transform: scale(1.05);
     opacity: 0.8;
     transition: opacity 0.2s ease-out;
-    color: $linear-gradient;
   }
 }
 

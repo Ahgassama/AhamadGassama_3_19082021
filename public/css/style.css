@@ -414,25 +414,19 @@ h2 {
   position: absolute;
 }
 .empty-Heart:hover {
-  border: transparent 0px solid;
-  opacity: 0.1;
+  color: transparent;
+  opacity: 0;
   transition: opacity 0.1s ease-out;
-  -moz-transition: opacity 0.1s ease-out;
-  -webkit-transition: opacity 0.1s ease-out;
-  -o-transition: opacity 0.1s ease-out;
 }
 
 .full-Heart {
   opacity: 0;
-}
-.full-Heart:active {
-  color: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  color: #9356dc;
 }
 .full-Heart:hover {
-  border: transparent 0px solid;
+  transform: scale(1.05);
   opacity: 0.8;
   transition: opacity 0.2s ease-out;
-  color: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
 }
 
 .maps {
@@ -556,7 +550,8 @@ p {
 @media screen and (min-width: 1025px) {
   .meals {
     padding: 15px;
-    width: 100%;
+    width: 300px;
+    max-width: 300px;
   }
 }
 
