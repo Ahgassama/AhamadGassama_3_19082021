@@ -207,7 +207,8 @@ h2 {
 }
 .full-Heart {
   opacity: 0;
-  color: #9356dc;
+  background-color: $linear-gradient;
+  background-clip: text;
 
   &:hover {
     transform: scale(1.05);
