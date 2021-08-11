@@ -147,12 +147,6 @@ li {
   font-size: 25px;
 }
 
-.line {
-  width: 40px;
-  border: 2px solid #99e2d0;
-  margin-left: 10px;
-}
-
 .btn__Explore {
   background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   border: 1px solid transparent;
@@ -420,9 +414,10 @@ h2 {
 }
 
 .full-Heart {
+  background: linear-gradient(#9356dc, #b35cdc, #cf64dc, #e86edb);
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
   opacity: 0;
-  background-color: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-  background-clip: text;
 }
 .full-Heart:hover {
   transform: scale(1.05);
@@ -549,6 +544,12 @@ p {
 }
 .meals:hover .fa-check-circle {
   transform: rotate(360deg);
+}
+
+.line {
+  width: 40px;
+  border: 2px solid #99e2d0;
+  margin-left: 10px;
 }
 
 .last__line {

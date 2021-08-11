@@ -206,10 +206,10 @@ h2 {
   }
 }
 .full-Heart {
+  background: linear-gradient(#9356dc, #b35cdc, #cf64dc, #e86edb);
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
   opacity: 0;
-  background-color: $linear-gradient;
-  background-clip: text;
-
   &:hover {
     transform: scale(1.05);
     opacity: 0.8;
