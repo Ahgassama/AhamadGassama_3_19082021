@@ -406,18 +406,14 @@ h2 {
   font-size: 25px;
   width: 20px;
   margin: 20px;
-  transition: 300ms ease-in-out;
-  animation: fill 300mss ease-in-out;
-  animation-duration: 1s;
+  transition: 500ms;
 }
 .heart:hover .empty-Heart {
   opacity: 0;
+  transition: 500ms;
 }
 .heart:hover .full-Heart {
-  transition: 300ms ease-in-out;
-  animation: fill 300ms ease-in-out;
-  animation-duration: 1s;
-  transform: scale(1.02);
+  transition: 500ms;
   opacity: 1;
 }
 
@@ -434,6 +430,7 @@ h2 {
   font-weight: bold;
   text-decoration: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   opacity: 0;
+  transition: 500ms;
 }
 
 .maps {

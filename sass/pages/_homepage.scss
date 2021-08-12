@@ -194,13 +194,14 @@ h2 {
   font-size: 25px;
   width: 20px;
   margin: 20px;
-  transition: 0.5s ease-in-out;
+  transition: 500ms;
   &:hover {
     .empty-Heart {
       opacity: 0;
+      transition: 500ms;
     }
     .full-Heart {
-      transition: 0.5s ease-in-out;
+      transition: 500ms;
       opacity: 1;
     }
   }
@@ -218,6 +219,7 @@ h2 {
   font-weight: bold;
   text-decoration: $linear-gradient;
   opacity: 0;
+  transition: 500ms;
 }
 
 .maps {
