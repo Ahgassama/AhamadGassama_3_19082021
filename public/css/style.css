@@ -177,7 +177,7 @@ li {
   background-image: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   border: 1px solid transparent;
   border-radius: 30px;
-  margin: 40px 110px;
+  margin: 40px;
   color: #fff;
   font-weight: bold;
   font-size: 16px;
@@ -185,6 +185,7 @@ li {
   cursor: pointer;
   width: 50%;
   height: 50px;
+  align-self: center;
 }
 .btn__Order:hover {
   opacity: 0.8;
@@ -196,7 +197,6 @@ li {
 @media screen and (min-width: 1025px) {
   .btn__Order {
     width: 20%;
-    align-self: center;
   }
 }
 
@@ -416,11 +416,11 @@ h2 {
 .full-Heart {
   background: linear-gradient(#9356dc, #b35cdc, #cf64dc, #e86edb);
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-weight: bold;
   opacity: 0;
 }
 .full-Heart:hover {
-  transform: scale(1.05);
   opacity: 0.8;
   transition: opacity 0.2s ease-out;
 }

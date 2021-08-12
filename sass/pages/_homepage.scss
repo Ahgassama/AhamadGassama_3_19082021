@@ -196,6 +196,7 @@ h2 {
   width: 20px;
   margin: 20px;
 }
+
 .empty-Heart {
   position: absolute;
 
@@ -208,10 +209,10 @@ h2 {
 .full-Heart {
   background: linear-gradient(#9356dc, #b35cdc, #cf64dc, #e86edb);
   -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-weight: bold;
   opacity: 0;
   &:hover {
-    transform: scale(1.05);
     opacity: 0.8;
     transition: opacity 0.2s ease-out;
   }
