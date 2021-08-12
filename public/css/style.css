@@ -407,26 +407,26 @@ h2 {
   width: 20px;
   margin: 20px;
 }
+.heart:hover .empty-Heart {
+  opacity: 0;
+}
+.heart:hover .full-Heart {
+  opacity: 1;
+}
 
 .empty-Heart {
   position: absolute;
 }
-.empty-Heart:hover {
-  color: transparent;
-  opacity: 0;
-  transition: opacity 0.1s ease-out;
-}
 
 .full-Heart {
+  position: absolute;
   background: linear-gradient(#9356dc, #b35cdc, #cf64dc, #e86edb);
   -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
   background-clip: text;
   font-weight: bold;
+  text-decoration: linear-gradient(to left, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
   opacity: 0;
-}
-.full-Heart:hover {
-  opacity: 0.8;
-  transition: opacity 0.2s ease-out;
 }
 
 .maps {
@@ -537,14 +537,15 @@ p {
   justify-content: space-between;
   font-size: 0.9rem;
   text-align: left;
-  transition: padding-right 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 .meals:hover {
   padding-right: 80px;
 }
 .meals:hover .cross {
-  opacity: 1;
-  transform: translate(-50px);
+  width: 38px;
+  padding: 15px;
+  transition: 300ms ease-in-out;
 }
 .meals:hover .fa-check-circle {
   transform: rotate(360deg);
@@ -626,20 +627,25 @@ p {
   display: flex;
   justify-content: center;
   background-color: #99e2d0;
-  width: 40px;
+  width: 0px;
   height: 60px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   position: absolute;
-  padding: 20px;
-  right: -50px;
+  padding: 15px 0px;
+  right: 0px;
   top: 0;
-  opacity: 0;
+  overflow: hidden;
   transition: transform 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 .cross .fa-check-circle {
   color: #fff;
   transition: transform 400ms ease-in-out;
+}
+.cross .fa-check-circle:hover {
+  width: 38px;
+  transition: 300ms ease-in;
 }
 
 .cross--Check {

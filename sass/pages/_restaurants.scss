@@ -62,13 +62,14 @@
   justify-content: space-between;
   font-size: 0.9rem;
   text-align: left;
-  transition: padding-right 300ms ease-in-out;
+  transition: 300ms ease-in-out;
   &:hover {
     padding-right: 80px;
   }
   &:hover .cross {
-    opacity: 1;
-    transform: translate(-50px);
+    width: 38px;
+    padding: 15px;
+    transition: 300ms ease-in-out;
   }
   &:hover .fa-check-circle {
     transform: rotate(360deg);
@@ -139,6 +140,7 @@
 }
 .cross {
   @include cross;
+  transition: 300ms ease-in-out;
 }
 .cross--Check {
   font-size: 1.7rem;

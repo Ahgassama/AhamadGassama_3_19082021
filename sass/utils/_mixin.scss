@@ -14,15 +14,15 @@
   display: flex;
   justify-content: center;
   background-color: $color-tertiary;
-  width: 40px;
+  width: 0px;
   height: 60px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   position: absolute;
-  padding: 20px;
-  right: -50px;
+  padding: 15px 0px;
+  right: 0px;
   top: 0;
-  opacity: 0;
+  overflow: hidden;
   transition: transform 300ms ease-in-out;
   & .fa-check-circle {
     color: #fff;
