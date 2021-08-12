@@ -194,11 +194,18 @@ h2 {
   font-size: 25px;
   width: 20px;
   margin: 20px;
+  transition: 300ms ease-in-out;
+  animation: fill 300mss ease-in-out;
+  animation-duration: 1s;
   &:hover {
     .empty-Heart {
       opacity: 0;
     }
     .full-Heart {
+      transition: 300ms ease-in-out;
+      animation: fill 300ms ease-in-out;
+      animation-duration: 1s;
+      transform: scale(1.02);
       opacity: 1;
     }
   }

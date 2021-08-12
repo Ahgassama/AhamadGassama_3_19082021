@@ -406,11 +406,18 @@ h2 {
   font-size: 25px;
   width: 20px;
   margin: 20px;
+  transition: 300ms ease-in-out;
+  animation: fill 300mss ease-in-out;
+  animation-duration: 1s;
 }
 .heart:hover .empty-Heart {
   opacity: 0;
 }
 .heart:hover .full-Heart {
+  transition: 300ms ease-in-out;
+  animation: fill 300ms ease-in-out;
+  animation-duration: 1s;
+  transform: scale(1.02);
   opacity: 1;
 }
 
@@ -642,10 +649,6 @@ p {
 .cross .fa-check-circle {
   color: #fff;
   transition: transform 400ms ease-in-out;
-}
-.cross .fa-check-circle:hover {
-  width: 38px;
-  transition: 300ms ease-in;
 }
 
 .cross--Check {
