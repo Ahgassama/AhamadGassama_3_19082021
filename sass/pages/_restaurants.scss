@@ -25,11 +25,9 @@
 
 .menu__Title {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: nowrap;
-  @include desktop {
-    justify-content: space-between;
-  }
+
   .heart {
     margin-top: 25px;
     font-size: 25px;

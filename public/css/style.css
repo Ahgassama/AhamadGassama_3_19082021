@@ -500,13 +500,8 @@ p {
 
 .menu__Title {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: nowrap;
-}
-@media screen and (min-width: 1025px) {
-  .menu__Title {
-    justify-content: space-between;
-  }
 }
 .menu__Title .heart {
   margin-top: 25px;
